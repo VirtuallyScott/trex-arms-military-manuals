@@ -1,0 +1,34 @@
+# --- Python / venv ---------------------------------------------------------
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- fmv_grab.py output (default --out ./fmv) ------------------------------
+# Downloaded PDFs/EPUBs, manifest DB, log, and Chrome profile (holds cookies).
+fmv/
+# Same artifacts if --out points somewhere else inside the repo
+manifest.db
+manifest.db-wal
+manifest.db-shm
+fmv.log
+browser-profile/
+*.part
+*.pdf
+*.epub
+manifest.csv
+
+# --- OS / editor -----------------------------------------------------------
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# --- Secrets ---------------------------------------------------------------
+.env
+.env.*
